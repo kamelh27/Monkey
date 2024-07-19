@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey type Clone - Test your typing skills!</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main>
+     <div class="testConfig">
+        <div class="navbar">
+          <div class="row">
+          <div class="subnavbar">
+            <button class="textButton" mode="time">
+              <i> 
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12l3 2" /><path d="M12 7v5" /></svg>
+              </i>
+              <span>time</span>
+            </button>
+            <button class="textButton" mode="words">
+              <i> 
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-language-katakana"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 5h6.586a1 1 0 0 1 .707 1.707l-1.293 1.293" /><path d="M8 8c0 1.5 .5 3 -2 5" /><path d="M12 20l4 -9l4 9" /><path d="M19.1 18h-6.2" /></svg>
+              </i>
+              <span>words</span>
+            </button>   
+          </div>
+
+          <div class="time">
+            <button class="textButton" timeconfig="15">
+              <span>15</span>
+            </button>
+            <button class="textButton" timeconfig="30">
+              <span>30</span>
+            </button>
+            <button class="textButton" timeconfig="60">
+              <span>60</span>
+            </button>
+            <button class="textButton" timeconfig="120">
+              <span>120</span>
+            </button> 
+          </div>
+
+          <div class="wordCount">
+            <button class="textButton">
+              <span>10</span>
+            </button>
+            <button class="textButton">
+              <span>25</span>
+            </button>
+            <button class="textButton">
+              <span>50</span>
+            </button>
+            <button class="textButton">
+              <span>100</span>
+            </button> 
+          </div>
+          
+        </div>
+      </div>
+      </div>
+      <section id="game">
+        <time></time>
+        <p></p>
+        <input autofocus>
+      </section>
+      <section id="results">
+        <h2>wpm</h2>
+        <h3 id="results-wpm"></h3>
+
+        <h2>accuracy</h2>
+        <h3 id="results-accuracy"></h3>
+
+        <button id="reload-button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M19.933 13.041a8 8 0 1 1 -9.925 -8.788c3.899 -1 7.935 1.007 9.425 4.747" />
+          <path d="M20 4v5h-5" />
+        </svg>
+        </button>
+      </section>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
